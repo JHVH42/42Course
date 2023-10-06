@@ -1,34 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 21:43:02 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/05 21:43:02 by marvin           ###   ########.fr       */
+/*   Created: 2023/10/06 23:55:48 by marvin            #+#    #+#             */
+/*   Updated: 2023/10/06 23:55:48 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <ctype.h>
 
-int ft_isdigit(int var)
+int ft_isalnum(int var)
 {
-    if (var >= '0' && var <= '9')
+    if ((var >= 'a' && var <= 'z') || (var >= 'A' && var <= 'Z') || (var >= '0' && var <= '9'))
         return (1);
     else
-        return (0);
+        return (0);      
 }
-
+ 
 int main(void)
 {
     int var;
 
-    var = '1';
-    ft_isdigit(var);
-    if (ft_isdigit(var) == 1)
-        printf("is digit");
+    var = 'a';
+    ft_isalnum(var);
+    if (ft_isalnum(var) == 1)
+        printf("is alnum");
     else
-        printf("is not digit");
+        printf("is not alnum");
     return (0);
 }
