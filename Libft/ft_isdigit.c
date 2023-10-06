@@ -1,35 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jinhchen <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/05 17:23:31 by jinhchen          #+#    #+#             */
-/*   Updated: 2023/10/05 17:41:57 by jinhchen         ###   ########.fr       */
+/*   Created: 2023/10/05 21:43:02 by marvin            #+#    #+#             */
+/*   Updated: 2023/10/05 21:43:02 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
-#include <ctype.h>
 
-int	ft_isalpha(int var)
+int	ft_isdigit(int var)
 {
-	if ((var >= 'A' && var <= 'Z') || (var >= 'a' && var <= 'z'))
-		return (1);
-	else
-		return (0);
+    if (var >= '0' && var <= '9')
+        return (1);
+    else
+        return (0);
 }
 
 int	main(void)
 {
-	int	var;
+    int	var;
 
-	var = 'a';
-	ft_isalpha(var);
-	if (ft_isalpha(var) == 1)
-		printf("is alpha");
-	else
-		printf("is not alpha");
-	return (0);
+    var = '1';
+    ft_isdigit(var);
+    if (ft_isdigit(var) == 1)
+        printf("is digit");
+    else
+        printf("is not digit");
+    return (0);
 }
