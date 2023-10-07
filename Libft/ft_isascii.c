@@ -6,30 +6,30 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 23:55:38 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/06 23:55:38 by marvin           ###   ########.fr       */
+/*   Updated: 2023/10/07 16:57:45 by jinhchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <ctype.h>
 
-int ft_isascii(int var)
+int	ft_isascii(int var)
 {
-    if (var >= 0 && var <= 127)
-        return (1);
-    else
-        return (0);      
+	if (var >= 0 && var <= 127)
+		return (1);
+	else
+		return (0);
 }
 
-int main(void)
+int	main(void)
 {
-    int var;
+	int	var;
 
-    var = 'a';
-    ft_isascii(var);
-    if (ft_isascii(var) == 1)
-        printf("is ascii");
-    else
-        printf("is not ascii");
-    return (0);
+	var = 'a';
+	ft_isascii(var);
+	if (ft_isascii(var) == 1)
+		printf("is ascii");
+	else
+		printf("is not ascii");
+	return (0);
 }

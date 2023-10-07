@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 15:13:07 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/07 15:13:07 by marvin           ###   ########.fr       */
+/*   Updated: 2023/10/07 16:41:30 by jinhchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,8 @@ int	ft_atoi(char *str)
 
 	i = 0;
 	sinal = 1;
-	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
+	while (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' 
+		|| str[i] == '\v' || str[i] == '\f' || str[i] == '\r')
 		i++;
 	while (str[i] == '-' || str[i] == '+')
 	{
@@ -40,8 +41,8 @@ int	ft_atoi(char *str)
 	}
 	return (result * sinal);
 }
-
-int main(void)
+/*
+int	main(void)
 {
 	char str[] = "   -1234";
 	int res;
@@ -50,3 +51,4 @@ int main(void)
 	printf("%d\n", res);
 	return (0);
 }
+*/

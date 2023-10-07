@@ -6,7 +6,7 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/07 16:07:55 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/07 16:07:55 by marvin           ###   ########.fr       */
+/*   Updated: 2023/10/07 17:10:12 by jinhchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ int	ft_toupper(int c)
 		c = (c - 32);
 	return (c);
 }
-
-int main(void)
+/*
+int	main(void)
 {
 	char c = 'a';
 	char res;
@@ -29,3 +29,4 @@ int main(void)
 	printf("%c\n", res);
 	return (0);
 }
+*/

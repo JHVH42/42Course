@@ -6,29 +6,30 @@
 /*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/06 18:49:42 by marvin            #+#    #+#             */
-/*   Updated: 2023/10/06 18:49:42 by marvin           ###   ########.fr       */
+/*   Updated: 2023/10/07 17:14:16 by jinhchen         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <string.h>
 
-int ft_strlen(char *str)
+int	ft_strlen(char *str)
 {
-    int i;
+	int	i;
 
-    i = 0;
-    while (str[i])
-        i++;
-    return (i);
+	i = 0;
+	while (str[i])
+		i++;
+	return (i);
 }
-
-int main(void)
+/*
+int	main(void)
 {
-    char str[] = "Hello World!";
-    int len;
+	char	str[] = "Hello World!";
+	int	len;
 
-    len = ft_strlen(str);
-    printf("Length of %s is %d", str, len);
-    return (0);
+	len = ft_strlen(str);
+	printf("Length of %s is %d", str, len);
+	return (0);
 }
+*/
